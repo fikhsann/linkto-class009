@@ -1,0 +1,154 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+/* .container img {
+  width: 100%;
+  height: 99.9vh;
+} */
+
+.contentBox {
+  padding: 1rem;
+  padding-bottom: 5rem;
+  width: 50%;
+  /* background-color: white; */
+}
+
+.headerBox {
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  gap: 1rem;
+  align-items: center;
+}
+
+.headerBox img {
+  width: 100px;
+  height: 100px;
+}
+
+.title {
+  font-size: x-large;
+}
+
+.descriptionHeader {
+  font-weight: bold;
+  font-size: larger;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.linkBox {
+  text-decoration: none;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: snow;
+  padding: 1rem;
+  border-radius: 40px;
+  box-shadow: 8px 8px darkcyan;
+}
+
+.linkBox:hover {
+  transform: scale(0.95);
+  transition: all 300ms ease-in-out;
+}
+
+.linkBox img {
+  z-index: 1;
+  width: 40px;
+  height: 40px;
+}
+
+.descriptionLink {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.linkBox .descriptionLink p {
+  color: black;
+  font-size: larger;
+  font-weight: bold;
+  text-align: center;
+}
+
+footer {
+  background-color: rgba(0, 0, 0, 0.7);
+  padding: 20px 0;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.footer-content {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .contentBox {
+    width: 90%;
+    padding: 1rem;
+  }
+
+  .headerBox {
+    padding: 1rem;
+    gap: 0.5rem;
+  }
+
+  .headerBox img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .title {
+    font-size: large;
+    text-align: center;
+  }
+
+  .descriptionHeader {
+    font-size: medium;
+    text-align: center;
+  }
+
+  .linkBox {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+  }
+
+  .linkBox img {
+    width: 35px;
+    height: 35px;
+  }
+
+  .descriptionLink p {
+    font-size: medium;
+  }
+}
+
