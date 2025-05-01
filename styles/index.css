@@ -75,10 +75,6 @@ body {
   transition: all 300ms ease-in-out;
 }
 
-.linkBox:hover::after {
-  width: 100%;
-}
-
 .linkBox img {
   z-index: 1;
   width: 40px;
