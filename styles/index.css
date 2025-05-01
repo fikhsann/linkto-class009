@@ -75,9 +75,8 @@ body {
   transition: all 300ms ease-in-out;
 }
 
-.linkBox:active {
-  transform: scale(0.9);
-  transition: all 100ms ease-in-out;
+.linkBox:hover::after {
+  width: 100%;
 }
 
 .linkBox img {
