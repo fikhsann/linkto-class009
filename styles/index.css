@@ -75,6 +75,11 @@ body {
   transition: all 300ms ease-in-out;
 }
 
+.linkBox:active {
+  transform: scale(0.9);
+  transition: all 100ms ease-in-out;
+}
+
 .linkBox img {
   z-index: 1;
   width: 40px;
